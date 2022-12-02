@@ -19,7 +19,7 @@ $ docker build -t tesstrain .
 $ docker run -v $PWD/data:/var/tesstrain/data -it tesstrain bash
 ```
 
-### 3. ocrdのモデルを学習します。
+### 3. サンプルのモデル(ocrd)を学習します。
 /var/tesstrain/data/ocrd-ground-truth内に配置されているサンプルファイルで学習します。
 学習済みのfrk(フランス語)のデータ(/var/tesstrain/data/usr/share/tessdata/frk.traineddata)に対して、追加で学習を行います
 
