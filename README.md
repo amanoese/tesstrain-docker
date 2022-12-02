@@ -25,7 +25,9 @@ $ docker run -v $PWD/data:/var/tesstrain/data -it tesstrain bash
 
 ```bash
 $ make training MODEL_NAME=ocrd START_MODEL=frk MAX_ITERATIONS=100 > plot/ocrd.log
-
+```
+output
+```text
 oaded file data/ocrd/checkpoints/ocrd_checkpoint, unpacking...
 Successfully restored trainer from data/ocrd/checkpoints/ocrd_checkpoint
 Loaded 1/1 lines (1-1) of document data/ocrd-ground-truth/frapan_bittersuess_1891_0103_007.lstmf
@@ -41,6 +43,9 @@ Finishedが表示されれば学習は終了です。
 
 ```bash
 $ ./usr/bin/tesseract --tessdata-dir ./data --list-langs
+```
+output
+```text
 List of available languages (2):
 ocrd
 ocrd/ocrd
@@ -50,6 +55,9 @@ ocrd/ocrd
 
 ```bash
 $ ./usr/bin/tesseract -l ocrd --tessdata-dir ./data data/ocrd-ground-truth/alexis_ruhe01_1852_0018_022.tif stdout 2>/dev/null
+```
+output
+```text
 ich denke. Aber was die ſelige Frau Geheimräthun
 ```
 
@@ -59,7 +67,7 @@ ich denke. Aber was die ſelige Frau Geheimräthun
 
 ## 0からモデルを生成したい場合
 
-MakeのSTART_MODELを省略することで可能なようです？
+makeでのSTART_MODELを省略することで可能なようです？
 ```
 $ make training MODEL_NAME=ocrd =frk MAX_ITERATIONS=100
 ```
