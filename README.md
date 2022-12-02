@@ -1,4 +1,4 @@
-tesstrain docker
+tesstrain-docker
 ===
 
 Tessract OCR 4で再学習・追加学習手順させたい場合に必要なライブラリや学習元になるデータを良い感じに配置したDockerコンテナです。
