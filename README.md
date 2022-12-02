@@ -1,10 +1,10 @@
 tesstrain-docker
 ===
 
-Tessract OCR 4で再学習・追加学習手順させたい場合に必要なライブラリや学習元になるデータを良い感じに配置したDockerコンテナです。
+Tessract OCR 4で再学習・追加学習手順させたい場合に必要なライブラリや学習元になるデータを良い感じに配置したDockerコンテナです。  
 難しい依存問題を考えずすぐに学習を始めることができるはずです。
 
-Tessract-ocr: https://github.com/tesseract-ocr/tesseract
+Tessract-ocr: https://github.com/tesseract-ocr/tesseract  
 tesstrain: https://github.com/tesseract-ocr/tesstrain
 
 ## Usage
